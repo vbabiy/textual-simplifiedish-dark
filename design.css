@@ -154,14 +154,10 @@ a:hover {
 
 /* Images */
 
-body a img {
-    border: 0;
-}
-
 body img {
     display: block;
-    max-width: 95%;
-    margin: 15px 15px 12px 15px;
+    margin-left: 10.5em;
+    margin: 0px 15px 12px 10.5em;
 }
 
 /* Remember Line */
@@ -587,12 +583,6 @@ body div.line[type*=website] {
 
 body .inline_nickname {
   font-weight: 400;
-}
-
-body img {
-  display: inline;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 body div .message:before {
