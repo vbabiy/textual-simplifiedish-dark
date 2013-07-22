@@ -53,9 +53,12 @@ body div#body_home {
 body[type=channel] div#body_home {
   max-height: 96.5%;
 }
-
+body div.line {
+  line-height: 1.2em;
+  display: block;
+}
 body div.line .message {
-  display: inline-block;
+  line-height: 1.5em;
 }
 
 body div.line p {
@@ -67,6 +70,15 @@ body div.line p {
 
 body[dir=rtl] .sender {
     display: inline-block;
+}
+
+body[dir=ltr] .sender {
+    display: block;
+    width: 10em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: right;
+    float: left;
 }
 
 /* Time */
@@ -84,6 +96,14 @@ body[dir=ltr] .time {
   right: 0;
   opacity: 0;
   background: -webkit-linear-gradient(left, rgba(24,24,24,0) 0%,rgba(24,24,24,1) 20%,rgba(24,24,24,1) 100%); /* Chrome10+,Safari5.1+ */
+}
+body .line {
+  clear: both;
+}
+body[dir=ltr] .line .content {
+  margin-left:10.5em;
+  display: block;
+  width: auto;
 }
 body[dir=ltr] .line:hover .time {
   opacity: 1;
@@ -559,7 +579,10 @@ body div.line[type*=topic],
 body div.line[type*=website] {
   font-style: italic;
   font-weight: 100;
+  font-size: .8em;
+  /*line-height: .8em;*/
   color: #444;
+  margin-left: 126px;
 }
 
 body .inline_nickname {
